@@ -31,7 +31,7 @@ function App() {
     } catch (e) {
       console.error(e);
       setErrorMessage("通信エラーが発生しました。");
-      alert(error.message);
+      // alert(e.message);
     } finally {
       setIsLoading(false);
     }
@@ -51,7 +51,7 @@ function App() {
   // 新規登録処理
   const onClickAdd = async () => {
     const t = Number(time);
-    if (title.trim() === "" || t === "") {
+    if (title.trim() === "" || time === "") {
       setErrorMessage("学習内容と学習時間は必須入力です。");
       return;
     }

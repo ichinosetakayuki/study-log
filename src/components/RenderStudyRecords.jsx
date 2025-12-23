@@ -1,3 +1,5 @@
+import { TrashIcon } from "./icons/TrashIcon";
+
 export const RenderStudyRecords = (props) => {
   const { studyRecords, onClickDelete } = props;
   return (
@@ -8,7 +10,9 @@ export const RenderStudyRecords = (props) => {
              <span>
               {record.title} {record.time}時間
             </span>
-            <button onClick={() => onClickDelete(record.id)}>削除</button>
+            <button onClick={() => onClickDelete(record.id)}>
+              <TrashIcon size={16} />
+            </button>
           </li>
         );
       })}
