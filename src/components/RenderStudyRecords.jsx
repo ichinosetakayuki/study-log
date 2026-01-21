@@ -10,7 +10,7 @@ export const RenderStudyRecords = (props) => {
              <span>
               {record.title} {record.time}時間
             </span>
-            <button onClick={() => onClickDelete(record.id)}>
+            <button aria-label="削除" onClick={() => onClickDelete(record.id)}>
               <TrashIcon size={16} />
             </button>
           </li>
