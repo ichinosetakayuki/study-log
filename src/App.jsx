@@ -102,7 +102,7 @@ function App() {
         onChangeTitle={onChangeTitle}
         onChangeTime={onChangeTime}
       />
-      <p style={{ color: "red" }}>{errorMessage}</p>
+      <p role="alert" style={{ color: "red" }}>{errorMessage}</p>
       <div className="input-content">
         入力されている学習内容：<span>{title}</span>
       </div>
